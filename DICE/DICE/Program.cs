@@ -6,7 +6,11 @@ namespace DICE
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dice dice1 = new Dice();
+            Dice dice2 = new Dice(7);
+
+            Console.WriteLine("Dice:" + dice1.Roll());
         }
+    }
     }
 }
