@@ -12,5 +12,10 @@ namespace DICE
 
         public Dice() { this.Side = 6; }
         public Dice(int side) { this.Side = side; }
+        public int Roll()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1, Side + 1);
+        }
     }
 }
